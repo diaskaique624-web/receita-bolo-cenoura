@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Receita clássica de Bolo de Cenoura com Cobertura de Chocolate — The Velvet Alchemist" />
+  <title>Bolo de Cenoura · The Velvet Alchemist</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== HEADER / HERO ========== -->
+  <header class="hero" id="inicio">
+    <div class="hero__line-v" aria-hidden="true"></div>
+
+    <div class="hero__top">
+      <p class="label">Uma receita clássica brasileira</p>
+      <h1 class="hero__title hero__title--top">BOLO DE</h1>
+    </div>
+
+    <div class="hero__image-wrap">
+      <img
+        src="https://media.base44.com/images/public/69fdc42b01a82e028b167606/b57ecefa3_generated_ba50e785.png"
+        alt="Fatia de bolo de cenoura com cobertura de chocolate escuro em prato de cerâmica artesanal, iluminação dramática lateral"
+        class="hero__img"
+      />
+      <div class="hero__badge">Com cobertura de chocolate</div>
+    </div>
+
+    <div class="hero__bottom">
+      <h1 class="hero__title hero__title--bottom" aria-hidden="true">CENOURA</h1>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <span class="hero__scroll-label">Rolar</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main>
+
+    <!-- Separator -->
+    <div class="sep" aria-hidden="true"><div class="sep__line"></div></div>
+
+    <!-- ===== INGREDIENTS ===== -->
+    <section class="section" id="ingredientes" aria-labelledby="ing-title">
+
+      <div class="band-image">
+        <img
+          src="https://media.base44.com/images/public/69fdc42b01a82e028b167606/2e4e90cfe_generated_fb3d1837.png"
+          alt="Vista aérea dos ingredientes do bolo de cenoura: cenouras, ovos, açúcar, farinha, cacau e óleo dispostos em mise en place"
+          class="band-image__img"
+        />
+      </div>
+
+      <div class="section__inner">
+        <div class="section__header">
+          <span class="label label--accent">Mise en Place</span>
+          <h2 id="ing-title" class="section__title">Ingredientes</h2>
+          <div class="section__rule" aria-hidden="true"></div>
+        </div>
+
+        <div class="ingredients-grid">
+
+          <!-- A Massa -->
+          <div class="ing-col">
+            <h3 class="ing-col__heading">A Massa</h3>
+            <ul class="ing-list">
+              <li>3 cenouras médias descascadas e picadas</li>
+              <li>4 ovos</li>
+              <li>1 xícara (chá) de óleo vegetal</li>
+              <li>2 xícaras (chá) de açúcar</li>
+              <li>2 e ½ xícaras (chá) de farinha de trigo</li>
+              <li>1 colher (sopa) de fermento em pó</li>
+            </ul>
+          </div>
+
+          <!-- A Cobertura -->
+          <div class="ing-col">
+            <h3 class="ing-col__heading">A Cobertura</h3>
+            <ul class="ing-list">
+              <li>1 xícara (chá) de chocolate em pó</li>
+              <li>1 colher (sopa) de manteiga</li>
+              <li>1 xícara (chá) de açúcar</li>
+              <li>1 xícara (chá) de leite</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Separator -->
+    <div class="sep" aria-hidden="true"><div class="sep__line"></div></div>
+
+    <!-- ===== PREPARATION ===== -->
+    <section class="section" id="preparo" aria-labelledby="prep-title">
+      <div class="section__inner">
+
+        <div class="section__header">
+          <span class="label label--accent">Passo a Passo</span>
+          <h2 id="prep-title" class="section__title">Modo de Preparo</h2>
+          <div class="section__rule" aria-hidden="true"></div>
+        </div>
+
+        <!-- Batter steps -->
+        <h3 class="steps-group-title">A Massa</h3>
+        <ol class="steps-list">
+          <li>
+            <span class="step__num" aria-hidden="true">01</span>
+            <span class="step__watermark" aria-hidden="true">01</span>
+            <p>Pré-aqueça o forno a 180°C (350°F). Unte e enfarinhe uma forma de furo central.</p>
+          </li>
+          <li>
+            <span class="step__num" aria-hidden="true">02</span>
+            <span class="step__watermark" aria-hidden="true">02</span>
+            <p>No liquidificador, bata as cenouras, os ovos e o óleo até obter uma mistura homogênea.</p>
+          </li>
+          <li>
+            <span class="step__num" aria-hidden="true">03</span>
+            <span class="step__watermark" aria-hidden="true">03</span>
+            <p>Em uma tigela grande, misture o açúcar e a farinha de trigo. Adicione a mistura do liquidificador e mexa bem.</p>
+          </li>
+          <li>
+            <span class="step__num" aria-hidden="true">04</span>
+            <span class="step__watermark" aria-hidden="true">04</span>
+            <p>Por último, acrescente o fermento em pó e misture delicadamente com uma espátula.</p>
+          </li>
+          <li>
+            <span class="step__num" aria-hidden="true">05</span>
+            <span class="step__watermark" aria-hidden="true">05</span>
+            <p>Despeje a massa na forma preparada e leve ao forno por aproximadamente 40 minutos, ou até que um palito saia limpo.</p>
+          </li>
+          <li>
+            <span class="step__num" aria-hidden="true">06</span>
+            <span class="step__watermark" aria-hidden="true">06</span>
+            <p>Retire do forno e aguarde esfriar completamente antes de desenformar.</p>
+          </li>
+        </ol>
+
+        <!-- Glaze image -->
+        <div class="glaze-image-wrap">
+          <img
+            src="https://media.base44.com/images/public/69fdc42b01a82e028b167606/23e6f0bea_generated_08884636.png"
+            alt="Calda de chocolate sendo despejada com uma colher de prata sobre o bolo de cenoura, textura brilhante e líquida"
+            class="glaze-image"
+          />
+        </div>
+
+        <!-- Glaze steps -->
+        <h3 class="steps-group-title">A Cobertura</h3>
+        <ol class="steps-list" start="7">
+          <li>
+            <span class="step__num" aria-hidden="true">07</span>
+            <span class="step__watermark" aria-hidden="true">07</span>
+            <p>Em uma panela, misture o chocolate em pó, a manteiga, o açúcar e o leite.</p>
+          </li>
+          <li>
+            <span class="step__num" aria-hidden="true">08</span>
+            <span class="step__watermark" aria-hidden="true">08</span>
+            <p>Leve ao fogo médio, mexendo sem parar, até a mistura engrossar e desgrudar do fundo da panela.</p>
+          </li>
+          <li>
+            <span class="step__num" aria-hidden="true">09</span>
+            <span class="step__watermark" aria-hidden="true">09</span>
+            <p>Despeje a cobertura ainda quente sobre o bolo e espalhe uniformemente com uma espátula.</p>
+          </li>
+        </ol>
+
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-section" aria-label="Finalizar experiência">
+      <div class="cta-section__inner">
+        <span class="label">O Ritual Final</span>
+        <div class="cta-section__vline" aria-hidden="true"></div>
+        <button
+          id="btn-bon-appetit"
+          class="btn-primary"
+          type="button"
+          aria-label="Clique para receber uma mensagem de bom apetite"
+        >
+          Finalizar Experiência
+        </button>
+        <p class="cta-section__hint">
+          Veja também a nossa
+          <a href="contato.html" class="link">página de contato</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>
+        <p class="footer__brand">Bolo de Cenoura</p>
+        <p class="footer__sub">Uma receita clássica da culinária brasileira</p>
+      </div>
+      <nav class="footer__nav" aria-label="Navegação do rodapé">
+        <a href="index.html" class="footer__link">Receita</a>
+        <a href="contato.html" class="footer__link">Contato</a>
+      </nav>
+      <div class="footer__copy">
+        <p>The Velvet Alchemist · 2026</p>
+        <p>Estruturado com HTML5 semântico &amp; CSS3</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== TOAST OVERLAY ===== -->
+  <div id="toast-overlay" class="toast-overlay" role="alert" aria-live="assertive" aria-hidden="true">
+    <div class="toast-card">
+      <p class="toast-card__main">Bom apetite!</p>
+      <p class="toast-card__sub">Prepare o café! ☕</p>
+      <div class="toast-card__rule" aria-hidden="true"></div>
+      <p class="toast-card__hint">Toque para fechar</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
