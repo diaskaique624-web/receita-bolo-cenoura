@@ -1,0 +1,189 @@
+/* =========================================================
+   THE VELVET ALCHEMIST — style.css
+   Paleta "Earth & Obsidian"
+   #F9F7F2 Alabaster Cream  (fundo)
+   #2C1B18 Dark Cocoa       (texto principal)
+   #D35400 Burnt Sienna     (destaque / acento)
+   #27AE60 Garden Leaf      (sucesso)
+   ========================================================= */
+
+/* ── RESET & BASE ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cream:    #F9F7F2;
+  --cocoa:    #2C1B18;
+  --sienna:   #D35400;
+  --leaf:     #27AE60;
+  --border:   #E8E2D9;
+  --muted:    #8C7B72;
+
+  --font-display: 'Playfair Display', serif;
+  --font-ui:      'Montserrat', sans-serif;
+  --font-body:    'Inter', sans-serif;
+
+  --space-xs:  0.5rem;
+  --space-sm:  1rem;
+  --space-md:  2rem;
+  --space-lg:  4rem;
+  --space-xl:  clamp(4rem, 10vw, 8rem);
+  --space-2xl: clamp(6rem, 14vw, 12rem);
+
+  --max-w: 1100px;
+  --pad-x: clamp(1.5rem, 5vw, 5rem);
+
+  --transition: 0.35s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--cocoa);
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+
+/* ── UTILITIES ── */
+.label {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.label--accent {
+  color: var(--sienna);
+}
+
+.link {
+  color: var(--sienna);
+  border-bottom: 1px solid var(--sienna);
+  padding-bottom: 1px;
+  transition: opacity var(--transition);
+}
+.link:hover { opacity: 0.7; }
+
+.sep {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+}
+.sep__line {
+  width: 1px;
+  height: 4rem;
+  background-color: rgba(211,84,0,0.3);
+}
+
+
+/* ── BUTTONS ── */
+.btn-primary {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--cream);
+  background-color: var(--cocoa);
+  border: 2px solid var(--cocoa);
+  padding: 1rem 2.5rem;
+  min-width: 200px;
+  min-height: 48px;
+  cursor: pointer;
+  transition: background-color var(--transition), color var(--transition), border-color var(--transition);
+}
+
+.btn-primary:hover {
+  background-color: var(--sienna);
+  border-color: var(--sienna);
+}
+
+.btn-primary:focus-visible {
+  outline: 3px dashed var(--sienna);
+  outline-offset: 4px;
+}
+
+
+/* ===================================================
+   HERO
+   =================================================== */
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem var(--pad-x);
+  overflow: hidden;
+}
+
+.hero__line-v {
+  position: absolute;
+  left: calc(var(--pad-x) * 0.4);
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(211,84,0,0.12);
+  pointer-events: none;
+}
+
+.hero__top { padding-top: clamp(2rem, 5vw, 4rem); }
+
+.hero__title {
+  font-family: var(--font-display);
+  font-weight: 900;
+  line-height: 0.9;
+  font-size: clamp(3.5rem, 8vw, 10rem);
+}
+
+.hero__title--top  { color: var(--cocoa); }
+.hero__title--bottom {
+  color: var(--sienna);
+  text-align: right;
+}
+
+.hero__image-wrap {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin: 2rem 0;
+}
+
+.hero__img {
+  width: 100%;
+  max-width: 540px;
+  border-radius: 2px;
+  box-shadow: 0 32px 80px rgba(44,27,24,0.25);
+}
+
+.hero__badge {
+  position: absolute;
