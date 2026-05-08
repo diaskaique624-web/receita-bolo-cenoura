@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Entre em contato com The Velvet Alchemist — Bolo de Cenoura" />
+  <title>Contato · The Velvet Alchemist</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav class="contact-nav" aria-label="Navegação principal">
+    <a href="index.html" class="contact-nav__back">
+      <span class="contact-nav__arrow" aria-hidden="true">←</span>
+      Voltar à Receita
+    </a>
+    <span class="contact-nav__brand">The Velvet Alchemist</span>
+  </nav>
+
+  <!-- ========== CONTACT HEADER ========== -->
+  <header class="contact-header">
+    <div class="contact-header__vline" aria-hidden="true"></div>
+    <div class="contact-header__content">
+      <span class="label label--accent">Fale Conosco</span>
+      <h1 class="contact-header__title">Contato</h1>
+      <p class="contact-header__sub">
+        Tem dúvidas sobre a receita? Variações, dicas ou sugestões?<br />
+        Adoramos ouvir de quem ama cozinhar.
+      </p>
+      <div class="section__rule" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN ========== -->
+  <main class="contact-main">
+
+    <div class="contact-grid">
+
+      <!-- ===== FORM ===== -->
+      <section class="contact-form-wrap" aria-labelledby="form-title">
+        <h2 id="form-title" class="contact-form-wrap__title">Envie uma mensagem</h2>
+
+        <form id="contact-form" class="contact-form" novalidate>
+
+          <div class="form-group">
+            <label for="name" class="form-label">Nome completo <span class="form-required" aria-label="campo obrigatório">*</span></label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-input"
+              placeholder="Seu nome"
+              autocomplete="name"
+              required
+            />
+            <span class="form-error" id="name-error" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">E-mail <span class="form-required" aria-label="campo obrigatório">*</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-input"
+              placeholder="seu@email.com"
+              autocomplete="email"
+              required
+            />
+            <span class="form-error" id="email-error" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="subject" class="form-label">Assunto</label>
+            <select id="subject" name="subject" class="form-input form-select">
+              <option value="">Selecione um assunto</option>
+              <option value="duvida">Dúvida sobre a receita</option>
+              <option value="variacao">Variação ou substituição de ingrediente</option>
+              <option value="dica">Dica ou sugestão</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Mensagem <span class="form-required" aria-label="campo obrigatório">*</span></label>
+            <textarea
+              id="message"
+              name="message"
+              class="form-input form-textarea"
+              placeholder="Escreva sua mensagem aqui..."
+              rows="6"
+              required
+            ></textarea>
+            <span class="form-error" id="message-error" role="alert"></span>
+          </div>
+
+          <button type="submit" class="btn-primary" id="submit-btn">
+            Enviar Mensagem
+          </button>
+
+        </form>
+
+        <!-- Success message -->
+        <div id="form-success" class="form-success" aria-live="polite" hidden>
+          <div class="form-success__icon" aria-hidden="true">✓</div>
+          <p class="form-success__title">Mensagem enviada!</p>
+          <p class="form-success__sub">Obrigado pelo contato. Retornaremos em breve.</p>
+        </div>
+
+      </section>
+
+      <!-- ===== INFO SIDEBAR ===== -->
+      <aside class="contact-info" aria-label="Informações de contato">
+
+        <div class="contact-info__block">
+          <h3 class="contact-info__heading">Sobre o projeto</h3>
+          <p class="contact-info__text">
+            O <strong>The Velvet Alchemist</strong> é um projeto educacional que explora
+            a culinária brasileira através de design editorial de alta qualidade,
+            unindo HTML5 semântico, CSS3 moderno e tipografia cuidadosa.
+          </p>
+        </div>
+
+        <div class="contact-info__block">
+          <h3 class="contact-info__heading">Tempo de preparo</h3>
+          <ul class="contact-info__list">
+            <li>
+              <span class="contact-info__label">Preparo</span>
+              <span class="contact-info__value">20 min</span>
+            </li>
+            <li>
+              <span class="contact-info__label">Forno</span>
+              <span class="contact-info__value">40 min</span>
+            </li>
+            <li>
+              <span class="contact-info__label">Total</span>
+              <span class="contact-info__value">~1 hora</span>
+            </li>
+            <li>
+              <span class="contact-info__label">Rendimento</span>
+              <span class="contact-info__value">12 porções</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-info__block">
+          <h3 class="contact-info__heading">Dificuldade</h3>
+          <div class="difficulty">
+            <div class="difficulty__bar">
+              <div class="difficulty__fill" style="width: 40%"></div>
+            </div>
+            <span class="difficulty__label">Fácil</span>
+          </div>
+        </div>
+
+        <div class="contact-info__block">
+          <h3 class="contact-info__heading">Tecnologias</h3>
+          <div class="tech-tags">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Google Fonts</span>
+            <span class="tech-tag">Responsive</span>
+          </div>
+        </div>
+
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>
+        <p class="footer__brand">Bolo de Cenoura</p>
+        <p class="footer__sub">Uma receita clássica da culinária brasileira</p>
+      </div>
+      <nav class="footer__nav" aria-label="Navegação do rodapé">
+        <a href="index.html" class="footer__link">Receita</a>
+        <a href="contato.html" class="footer__link">Contato</a>
+      </nav>
+      <div class="footer__copy">
+        <p>The Velvet Alchemist · 2026</p>
+        <p>Estruturado com HTML5 semântico &amp; CSS3</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
